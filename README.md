@@ -1,6 +1,11 @@
 # RecoverTogether
 A social support app for injury recovery
 
+## Team Members
+
+- Angelina Chavera
+- Jose Alvarez
+- Ariana Alcantar
 
 ## Project Description
 
@@ -30,6 +35,10 @@ The programming language, framework, and database has not been chosen and is to 
 ## Agile Planning
 
 The project will be developed in smaller stages using Agile methodology. Tasks will be divided among team members, and progress will be reviewed throughout development.
+
+## Team Responsibilities
+
+Team members will collaborate on the development of RecoverTogether, including project setup, application development, testing, and documentation. Specific responsibilities will be assigned as the project progresses.
 
 ### Initial Sprint
 
