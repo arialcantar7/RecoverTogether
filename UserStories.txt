@@ -1,0 +1,26 @@
+RecoverTogether - 5 User Stories
+
+User Story 1: Account Management
+As a new member recovering from an injury,
+I want to create an account and personalize my profile,
+so that I can connect with people who understand what I am going through.
+
+User Story 2: Community Interaction
+As a college athlete recovering from a sports injury,
+I want to share my recovery experiences,
+so that I can connect with others who are facing similar challenges.
+
+User Story 3: Sharing Advice and Encouragement
+As a person who has recovered from a serious injury,
+I want to comment on posts and share my experiences,
+so that I can encourage others who are still going through recovery.
+
+User Story 4: Finding Relevant Information
+As a high school student recovering from a broken bone,
+I want to explore posts about similar injuries,
+so that I can learn how others handled their recovery process.
+
+User Story 5: Tracking Recovery Progress
+As a working adult recovering from surgery,
+I want to keep a journal of my recovery progress,
+so that I can track my improvements and reflect on the challenges I have overcome.
