@@ -1,0 +1,188 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecoverTogether</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<header class="topbar">
+    <h1>RecoverTogether</h1>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="#communities">Communities</a>
+        <a href="#journal">Recovery Journal</a>
+        <a href="#profile">Profile</a>
+    </nav>
+
+    <a class="login" href="/admin/">Admin</a>
+</header>
+
+<main class="container">
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <span class="welcome-label">YOUR RECOVERY COMMUNITY</span>
+
+        <h2>Your recovery journey starts here.</h2>
+
+        <p>
+            Connect with others, share your experiences, and support
+            one another along the way. You don't have to recover alone.
+        </p>
+
+        <a href="#communities" class="welcome-button">
+            Explore Communities
+        </a>
+    </section>
+
+    <!-- Create Post Section -->
+    <section class="create-post">
+        <h2>Share your experience</h2>
+
+        <p>What's happening in your recovery journey?</p>
+
+        <textarea placeholder="Write something to the community..."></textarea>
+
+        <button type="button" disabled>
+            Share Post (coming soon)
+        </button>
+    </section>
+
+    <!-- Communities Section -->
+    <section class="categories" id="communities">
+
+        <div class="section-heading">
+            <h2>Explore Communities</h2>
+
+            <p>
+                Find people who understand what you're going through.
+            </p>
+        </div>
+
+        <div class="category-list">
+
+            <div class="category">
+                <h3>Broken Bones</h3>
+                <p>
+                    Connect with others healing from fractures and broken bones.
+                </p>
+            </div>
+
+            <div class="category">
+                <h3>Sports Injuries</h3>
+                <p>
+                    Share experiences recovering from athletic and sports injuries.
+                </p>
+            </div>
+
+            <div class="category">
+                <h3>Sprains</h3>
+                <p>
+                    Support others recovering from sprains and ligament injuries.
+                </p>
+            </div>
+
+            <div class="category">
+                <h3>Surgery Recovery</h3>
+                <p>
+                    Connect with people navigating recovery after surgery.
+                </p>
+            </div>
+
+            <div class="category">
+                <h3>Muscle Injuries</h3>
+                <p>
+                    Find support while recovering from muscle strains and injuries.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Community Feed -->
+    <section class="feed" id="journal">
+
+        <div class="section-heading">
+            <h2>Community Feed</h2>
+
+            <p>
+                See how others are progressing through their recovery journeys.
+            </p>
+        </div>
+
+        <!-- First Post -->
+        <article class="post">
+
+            <div class="post-header">
+
+                <div class="avatar">AM</div>
+
+                <div class="author-info">
+                    <h3>Alex M.</h3>
+                    <span>Broken Ankle Community</span>
+                </div>
+
+            </div>
+
+            <p class="post-content">
+                This is my first week recovering from an ankle injury.
+                It has been difficult, but I'm trying to stay positive.
+                How do you cope with being less active?
+            </p>
+
+            <div class="post-actions">
+                <span>♡ Like</span>
+                <span>Comment</span>
+            </div>
+
+        </article>
+
+        <!-- Second Post -->
+        <article class="post">
+
+            <div class="post-header">
+
+                <div class="avatar">JR</div>
+
+                <div class="author-info">
+                    <h3>Jordan R.</h3>
+                    <span>Sports Injury Community</span>
+                </div>
+
+            </div>
+
+            <p class="post-content">
+                Sharing my recovery journey has helped me feel less alone.
+                Wishing everyone a good recovery!
+            </p>
+
+            <div class="post-actions">
+                <span>♡ Like</span>
+                <span>Comment</span>
+            </div>
+
+        </article>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            RecoverTogether | Supporting each other through recovery.
+        </p>
+
+        <p>
+            Peer support is not a replacement for professional medical advice.
+        </p>
+    </footer>
+
+</main>
+
+</body>
+</html>
