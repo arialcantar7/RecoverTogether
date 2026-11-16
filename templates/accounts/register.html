@@ -1,0 +1,29 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account | RecoverTogether</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <main class="container">
+        <section class="create-post">
+            <h1>Create Your Account</h1>
+            <p>Join the RecoverTogether community.</p>
+
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Create Account</button>
+            </form>
+
+            <p>Already have an account?
+                <a href="{% url 'login' %}">Log in</a>
+            </p>
+            <a href="{% url 'home' %}">Back to Home</a>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Dashboard | RecoverTogether</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <main class="container">
+        <section class="welcome">
+            <h1>Welcome, {{ user.username }}!</h1>
+            <p>Your RecoverTogether account is ready.</p>
+        </section>
+
+        <section class="create-post">
+            <h2>My Account</h2>
+            <p>Username: {{ user.username }}</p>
+            <p>Email: {{ user.email }}</p>
+
+            <a href="{% url 'home' %}">Return Home</a>
+
+            <form method="POST" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type="submit">Log Out</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

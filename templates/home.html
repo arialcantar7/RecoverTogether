@@ -10,18 +10,32 @@
 </head>
 <body>
 
+
 <header class="topbar">
     <h1>RecoverTogether</h1>
 
     <nav>
         <a href="/">Home</a>
         <a href="#communities">Communities</a>
-        <a href="#journal">Recovery Journal</a>
-        <a href="#profile">Profile</a>
+        <a href="#journal">Community Feed</a>
+
+        {% if user.is_authenticated %}
+            <a href="{% url 'dashboard' %}">My Account</a>
+        {% else %}
+            <a href="{% url 'register' %}">Create Account</a>
+            <a href="{% url 'login' %}">Log In</a>
+        {% endif %}
     </nav>
 
-    <a class="login" href="/admin/">Admin</a>
+    {% if user.is_authenticated %}
+        <a class="login" href="{% url 'dashboard' %}">
+            Welcome, {{ user.username }}
+        </a>
+    {% else %}
+        <a class="login" href="{% url 'login' %}">Log In</a>
+    {% endif %}
 </header>
+
 
 <main class="container">
 
